@@ -1,5 +1,5 @@
 import Head from 'next/head';
-
+import { articles } from '../db/article';
 export default function Home() {
   return (
     <div>
@@ -87,6 +87,8 @@ export default function Home() {
           </p>
         </div>
       </header>
+
+      {/* MAIN */}
       <div className="container-fluid">
         <main className="tm-main">
           <div className="row tm-row">
@@ -136,149 +138,6 @@ export default function Home() {
               <div className="d-flex justify-content-between">
                 <span>36 comments</span>
                 <span>by Admin Nat</span>
-              </div>
-            </article>
-            <article className="col-12 col-md-6 tm-post">
-              <hr className="tm-hr-primary" />
-              <a href="post.html" className="effect-lily tm-post-link tm-pt-60">
-                <div className=" tm-post-link-inner">
-                  <img src="img/img-02.jpg" alt="Image" className="img-fluid" />
-                </div>
-                <span className="position-absolute tm-new-badge">New</span>
-                <h2 className="tm-pt-30 tm-color-primary tm-post-title">
-                  Multi-purpose blog template
-                </h2>
-              </a>
-              <p className="tm-pt-30">
-                <a
-                  rel="nofollow"
-                  href="https://templatemo.com/tm-553-xtra-blog"
-                  target="_blank"
-                >
-                  Xtra Blog
-                </a>{' '}
-                is a multi-purpose HTML CSS template from TemplateMo website.
-                Blog list, single post, about, contact pages are included. Left
-                sidebar fixed width and content area is a fluid full-width.
-              </p>
-              <div className="d-flex justify-content-between tm-pt-45">
-                <span className="tm-color-primary">
-                  Creative . Design . Business
-                </span>
-                <span className="tm-color-primary">June 16, 2020</span>
-              </div>
-              <hr />
-              <div className="d-flex justify-content-between">
-                <span>48 comments</span>
-                <span>by Admin Sam</span>
-              </div>
-            </article>
-            <article className="col-12 col-md-6 tm-post">
-              <hr className="tm-hr-primary" />
-              <a href="post.html" className="effect-lily tm-post-link tm-pt-20">
-                <div className="tm-post-link-inner">
-                  <img src="img/img-03.jpg" alt="Image" className="img-fluid" />
-                </div>
-                <h2 className="tm-pt-30 tm-color-primary tm-post-title">
-                  How can you apply Xtra Blog
-                </h2>
-              </a>
-              <p className="tm-pt-30">
-                You are <u>allowed</u> to convert this template as any kind of
-                CMS theme or template for your custom website builder. You can
-                also use this for your clients. Thank you for choosing us.
-              </p>
-              <div className="d-flex justify-content-between tm-pt-45">
-                <span className="tm-color-primary">Music . Audio</span>
-                <span className="tm-color-primary">June 11, 2020</span>
-              </div>
-              <hr />
-              <div className="d-flex justify-content-between">
-                <span>24 comments</span>
-                <span>by John Walker</span>
-              </div>
-            </article>
-            <article className="col-12 col-md-6 tm-post">
-              <hr className="tm-hr-primary" />
-              <a href="post.html" className="effect-lily tm-post-link tm-pt-20">
-                <div className="tm-post-link-inner">
-                  <img src="img/img-04.jpg" alt="Image" className="img-fluid" />
-                </div>
-                <h2 className="tm-pt-30 tm-color-primary tm-post-title">
-                  A little restriction to apply
-                </h2>
-              </a>
-              <p className="tm-pt-30">
-                You are <u>not allowed</u> to re-distribute this template as a
-                downloadable ZIP file on any template collection website. This
-                is strongly prohibited as we worked hard for this template.
-                Please contact TemplateMo for more information.
-              </p>
-              <div className="d-flex justify-content-between tm-pt-45">
-                <span className="tm-color-primary">Artworks . Design</span>
-                <span className="tm-color-primary">June 4, 2020</span>
-              </div>
-              <hr />
-              <div className="d-flex justify-content-between">
-                <span>72 comments</span>
-                <span>by Admin Sam</span>
-              </div>
-            </article>
-            <article className="col-12 col-md-6 tm-post">
-              <hr className="tm-hr-primary" />
-              <a href="post.html" className="effect-lily tm-post-link tm-pt-20">
-                <div className="tm-post-link-inner">
-                  <img src="img/img-05.jpg" alt="Image" className="img-fluid" />
-                </div>
-                <h2 className="tm-pt-30 tm-color-primary tm-post-title">
-                  Color hexa values of Xtra Blog
-                </h2>
-              </a>
-              <p className="tm-pt-30">
-                If you wish to kindly support us, please contact us or
-                contribute a small PayPal amount to info [at] templatemo.com
-                that is helpful for us.
-                <br />
-                Title #099 New #0CC <br />
-                <span className="tm-color-primary">
-                  Text #999 Line #CCC Next #0CC Prev #F0F0F0
-                </span>
-              </p>
-              <div className="d-flex justify-content-between tm-pt-45">
-                <span className="tm-color-primary">
-                  Creative . Video . Audio
-                </span>
-                <span className="tm-color-primary">May 31, 2020</span>
-              </div>
-              <hr />
-              <div className="d-flex justify-content-between">
-                <span>84 comments</span>
-                <span>by Admin Sam</span>
-              </div>
-            </article>
-            <article className="col-12 col-md-6 tm-post">
-              <hr className="tm-hr-primary" />
-              <a href="post.html" className="effect-lily tm-post-link tm-pt-20">
-                <div className="tm-post-link-inner">
-                  <img src="img/img-06.jpg" alt="Image" className="img-fluid" />
-                </div>
-                <h2 className="tm-pt-30 tm-color-primary tm-post-title">
-                  Donec convallis varius risus
-                </h2>
-              </a>
-              <p className="tm-pt-30">
-                Quisque id ipsum vel sem maximus vulputate sed quis velit. Nunc
-                vel turpis eget orci elementum cursus vitae in eros. Quisque
-                vulputate nulla ut dolor consectetur luctus.
-              </p>
-              <div className="d-flex justify-content-between tm-pt-45">
-                <span className="tm-color-primary">Visual . Artworks</span>
-                <span className="tm-color-primary">June 16, 2020</span>
-              </div>
-              <hr />
-              <div className="d-flex justify-content-between">
-                <span>96 comments</span>
-                <span>by Admin Sam</span>
               </div>
             </article>
           </div>
