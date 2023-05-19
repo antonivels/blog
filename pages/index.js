@@ -114,32 +114,45 @@ export default function Home() {
             </div>
           </div>
           <div className="row tm-row">
-            <article className="col-12 col-md-6 tm-post">
-              <hr className="tm-hr-primary" />
-              <a href="post.html" className="effect-lily tm-post-link tm-pt-60">
-                <div className="tm-post-link-inner">
-                  <img src="img/img-01.jpg" alt="Image" className="img-fluid" />
-                </div>
-                <span className="position-absolute tm-new-badge">New</span>
-                <h2 className="tm-pt-30 tm-color-primary tm-post-title">
-                  Simple and useful HTML layout
-                </h2>
-              </a>
-              <p className="tm-pt-30">
-                There is a clickable image with beautiful hover effect and
-                active title link for each post item. Left side is a sticky menu
-                bar. Right side is a blog content that will scroll up and down.
-              </p>
-              <div className="d-flex justify-content-between tm-pt-45">
-                <span className="tm-color-primary">Travel . Events</span>
-                <span className="tm-color-primary">June 24, 2020</span>
-              </div>
-              <hr />
-              <div className="d-flex justify-content-between">
-                <span>36 comments</span>
-                <span>by Admin Nat</span>
-              </div>
-            </article>
+            {articles.map((article) => {
+              return (
+                <>
+                  <article className="col-12 col-md-6 tm-post">
+                    <hr className="tm-hr-primary" />
+                    <a
+                      href="post.html"
+                      className="effect-lily tm-post-link tm-pt-60"
+                    >
+                      <div className="tm-post-link-inner">
+                        <img
+                          src={article.image.src}
+                          alt=""
+                          width={article.image.width}
+                        />
+                      </div>
+                      <h2 className="tm-pt-30 tm-color-primary tm-post-title">
+                        {article.title}
+                      </h2>
+                    </a>
+                    <p className="tm-pt-30">{article.body}</p>
+                    <div className="d-flex justify-content-between tm-pt-45">
+                      <span className="tm-color-primary">
+                        {' '}
+                        {article.category}{' '}
+                      </span>
+                      <span className="tm-color-primary">
+                        {' '}
+                        {article.published}{' '}
+                      </span>
+                    </div>
+                    <hr />
+                    <div className="d-flex justify-content-between">
+                      <span> {article.author} </span>
+                    </div>
+                  </article>
+                </>
+              );
+            })}
           </div>
           <div className="row tm-row tm-mt-100 tm-mb-75">
             <div className="tm-prev-next-wrapper">
