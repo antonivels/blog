@@ -12,6 +12,12 @@ https://templatemo.com/tm-553-xtra-blog
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+
+.mymaincss {
+  margin-left: '40%';
+  margin-top: '200px';
+}
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;

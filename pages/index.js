@@ -120,7 +120,7 @@ export default function Home() {
                   <article className="col-12 col-md-6 tm-post">
                     <hr className="tm-hr-primary" />
                     <a
-                      href="post.html"
+                      href={'/article/' + article.id}
                       className="effect-lily tm-post-link tm-pt-60"
                     >
                       <div className="tm-post-link-inner">
